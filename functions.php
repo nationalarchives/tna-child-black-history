@@ -9,15 +9,14 @@ function tnatheme_globals() {
     if (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
         $pre_path = '';
         $pre_crumbs = array(
-            'Site home title' => '/'
+            'Black History' => '/'
         );
     // If external TNA
     } else {
         $pre_crumbs = array(
-            'About' => '/about/',
-            'Site home title' => '/about/site-home-title/'
+            'Black History' => '/black-history/'
         );
-        $pre_path = '/about/site-home-title';
+        $pre_path = '/black-history';
     }
 }
 // If web development machine
@@ -26,7 +25,7 @@ if ( $_SERVER['SERVER_ADDR'] !== $_SERVER['REMOTE_ADDR'] ) {
     } else {
         $pre_path = '';
         $pre_crumbs = array(
-            'Site home title' => '/'
+            'Black History' => '/'
     );
 }
 
