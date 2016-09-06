@@ -12,3 +12,38 @@ Text Domain:    tna-base
 */
 
 /* Add custom CSS here to overwrite parent theme CSS */
+
+.banner {
+    background: #ddd;
+    background-size: cover;
+}
+.banner h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+    line-height: 1.23;
+    margin: 2em auto;
+}
+.tna-breadcrumb {
+    margin: 0;
+}
+.menu {
+    padding: 0.4em 0;
+    background: #2d3b59;
+    color: #fff;
+    margin-bottom: 1em;
+}
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 1em 0 1.5em;
+    list-style-image: none;
+    background: url(img/menu-link.png) left center no-repeat;
+}
+.menu ul li a {
+    color: #fff;
+}
