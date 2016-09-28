@@ -9,7 +9,7 @@ $(document).ready(function () {
     var n = 3;
     var $events = $("#event");
     // Get data from API
-    $.get("https://www.eventbriteapi.com/v3/events/search/?q=black+british+history&sort_by=date&organizer.id=2226699547&token=5VVFLKAPZUXJSKQ3QTBG", function (res) {
+    $.get("https://www.eventbriteapi.com/v3/events/search/?q=events+relating+to+black+british+history&sort_by=date&organizer.id=2226699547&token=5VVFLKAPZUXJSKQ3QTBG", function (res) {
         // displays upcoming feature event
         if (res.events.length) {
             var s = "";
