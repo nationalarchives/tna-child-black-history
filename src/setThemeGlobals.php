@@ -14,17 +14,16 @@ function setThemeGlobals($environment = null) {
     global $pre_crumbs;
 
     switch ($environment) {
-        case 'local':
+        case 'internal':
         case 'development':
             $pre_path = '';
-            $pre_crumbs = array('Site home title' => '/');
+            $pre_crumbs = array('Black British History' => '/');
             break;
         case 'external':
             $pre_crumbs = array(
-                'About' => '/about/',
-                'Site home title' => '/about/site-home-title/'
+                'Black British History' => '/black-history/'
             );
-            $pre_path = '/about/site-home-title';
+            $pre_path = '/black-history';
             break;
     }
 }
