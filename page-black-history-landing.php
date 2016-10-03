@@ -173,7 +173,7 @@ get_header(); ?>
 				<div class="connect">
 					<div class="row">
 						<div class="col-sm-6">
-							<h2>Stay up-to-date</h2>
+							<h2>Stay up-to-date and sign up to our newsletter</h2>
 						</div>
 						<div class="col-sm-4">
 							<form name="signup" id="signup" class="pad-medium" action="http://r1.wiredemail.net/signup.ashx" method="post" role="form">
