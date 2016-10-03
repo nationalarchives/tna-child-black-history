@@ -64,6 +64,10 @@ get_header(); ?>
 				</div>
 			</section>
 			<?php } ?>
+			<!-- 
+			Dynamic Content Section.
+			From RSS and Eventbrite.
+			-->
 			<section id="dynamic-content">
 				<div class="row">
 					<div class="equal-heights equal-heights-flex-box">
@@ -92,6 +96,11 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
+			<!--
+			First content section.
+			Populated via custom fields (metabox function).
+			See black_history_meta_boxes() in functions.php
+			-->
 			<?php if ( $first_section_heading ) { ?>
 			<section id="first-content-section">
 				<div class="row">
@@ -134,6 +143,11 @@ get_header(); ?>
 				</div>
 			</section>
 			<?php } ?>
+			<!--
+			Second Content Section.
+			Populated via custom fields (metabox function).
+			See black_history_meta_boxes() in functions.php
+			-->
 			<?php if ( get_post_meta( $post->ID, 'second_section_display', true ) == 'enabled' ) { ?>
 			<section id="second-content-section">
 				<div class="row">
