@@ -7,7 +7,7 @@ get_header(); ?>
 	<?php while ( have_posts() ) : the_post();
 	$feature_img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 	if ( $feature_img ) { ?>
-	<div class="banner feature-img" role="banner" style="background: url( <?php echo $feature_img[0] ?> ) no-repeat center center;background-size: cover;">
+	<div class="banner feature-img" role="banner" style="background: url( <?php echo make_path_relative( $feature_img[0] ) ?> ) no-repeat center center;background-size: cover;">
 	<?php } else { ?>
 	<div class="banner" role="banner">
 	<?php } ?>
