@@ -54,12 +54,31 @@ get_header(); ?>
 			<?php if ( get_post()->post_content ) { ?>
 			<section id="page-content">
 				<div class="row">
-					<div class="col-md-12">
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<div class="entry-content clearfix">
-								<?php the_content(); ?>
-							</div>
-						</article>
+					<div class="equal-heights equal-heights-flex-box">
+						<div class="col-md-8">
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+								<div class="entry-content clearfix">
+									<?php the_content(); ?>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4">
+							<article>
+								<?php
+								$title = get_post_meta( $post->ID, 'research_guide_heading', true );
+								$link = get_post_meta( $post->ID, 'research_guide_link', true );
+								$description = get_post_meta( $post->ID, 'research_guide_description', true );
+								?>
+								<div class="entry-content clearfix">
+									<h3>
+										<a href="<?php echo $link ?>" title="<?php echo $title ?>">
+											<?php echo $title ?>
+										</a>
+									</h3>
+									<p><?php echo $description ?></p>
+								</div>
+							</article>
+						</div>
 					</div>
 				</div>
 			</section>

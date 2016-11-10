@@ -117,6 +117,36 @@ function black_history_meta_boxes() {
     $template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
     if ($template_file == 'page-black-history-landing.php') {
         $meta_boxes[] = array(
+            'id'       => 'bh-research-section',
+            'title'    => 'Research guide content',
+            'pages'    => 'page',
+            'context'  => 'normal',
+            'priority' => 'high',
+            'fields'   => array(
+                array(
+                    'name' => 'Research guide title',
+                    'desc' => '',
+                    'id'   => 'research_guide_heading',
+                    'type' => 'text',
+                    'std'  => ''
+                ),
+                array(
+                    'name' => 'Link to research guide',
+                    'desc' => 'Full URL path',
+                    'id'   => 'research_guide_link',
+                    'type' => 'text',
+                    'std'  => ''
+                ),
+                array(
+                    'name' => 'Research guide description',
+                    'desc' => '',
+                    'id'   => 'research_guide_description',
+                    'type' => 'textarea',
+                    'std'  => ''
+                )
+            )
+        );
+        $meta_boxes[] = array(
             'id'       => 'bh-first-section',
             'title'    => 'First content section',
             'pages'    => 'page',
