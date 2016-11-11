@@ -131,7 +131,7 @@ function black_history_meta_boxes() {
                     'std'  => ''
                 ),
                 array(
-                    'name' => 'Link to research guide',
+                    'name' => 'Title link',
                     'desc' => 'Full URL path',
                     'id'   => 'research_guide_link',
                     'type' => 'text',

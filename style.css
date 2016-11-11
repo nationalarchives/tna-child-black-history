@@ -136,6 +136,18 @@ ul.child li {
     background-clip: content-box;
     margin-bottom: 1.5em;
 }
+.bg-transparent {
+    background-color: transparent !important;
+}
+ul.child {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+ul.more li {
+    list-style-image: url(img/list-link-bullet.png);
+    float: right;
+}
 /* Holding page temporary styles (to be deleted) */
 .holding-page .container {
     max-width: 768px !important;
