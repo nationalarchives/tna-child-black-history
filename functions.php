@@ -82,7 +82,7 @@ function tna_posts_via_rss( $rss_url, $content_source_name, $number_of_posts, $i
                         $description = substr( $description, 0, strrpos( $description, " " ) ) . '...';
                     }
                 }
-                $html .= '<div id="' . $id . '-' . $n . '" class="col-sm-6 col-md-4"><div class="card clearfix">';
+                $html .= '<div id="' . $id . '-' . $n . '" class="col-sm-4 col-md-4"><div class="card clearfix">';
                 $html .= '<div class="entry-thumbnail" style="background: url(' . $enclosure . ') no-repeat center center;background-size: cover;">';
                 $html .= '<a href="' . $item->link . '" title="' . $item->title . '">';
                 // $html .= '<img src="' . $enclosure . '" alt="' . $item->title . '" class="hidden">';

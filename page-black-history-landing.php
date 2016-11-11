@@ -93,14 +93,14 @@ get_header(); ?>
 				<div class="row">
 					<div class="equal-heights equal-heights-flex-box">
 						<?php tna_posts_via_rss( 'http://blog.nationalarchives.gov.uk/blog/tag/black-british-history-portal/feed/', 'Blog', 3, 'blog' ) ?>
-						<div class="col-md-12 text-right bg-transparent">
+						<div class="col-sm-12 col-md-12 text-right bg-transparent">
 							<ul class="more">
 								<li>
 									<a href="http://blog.nationalarchives.gov.uk/blog/tag/black-british-history-portal/" title="More blog posts">More blog posts</a>
 								</li>
 							</ul>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-4 col-md-4">
 							<div id="event" class="card event clearfix">
 								<div class="entry-thumbnail">
 									<a href="http://nationalarchives.eventbrite.co.uk/" title="The National Archives events" target="_blank">
@@ -121,7 +121,7 @@ get_header(); ?>
 							</div>
 						</div>
 						<?php tna_posts_via_rss( 'http://media.nationalarchives.gov.uk/index.php/tag/black-british-history/feed/', 'Podcast', 2, 'podcast' ) ?>
-						<div class="col-md-12 text-right bg-transparent">
+						<div class="col-sm-12 col-md-12 text-right bg-transparent">
 							<ul class="more">
 								<li>
 									<a href="http://media.nationalarchives.gov.uk/index.php/tag/black-british-history/" title="More podcasts">More podcasts</a>
