@@ -54,12 +54,33 @@ get_header(); ?>
 			<?php if ( get_post()->post_content ) { ?>
 			<section id="page-content">
 				<div class="row">
-					<div class="col-md-12">
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<div class="entry-content clearfix">
-								<?php the_content(); ?>
-							</div>
-						</article>
+					<div class="equal-heights equal-heights-flex-box">
+						<div class="col-md-8">
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+								<div class="entry-content clearfix">
+									<?php the_content(); ?>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4">
+							<article>
+								<?php
+								$title = get_post_meta( $post->ID, 'research_guide_heading', true );
+								$link = get_post_meta( $post->ID, 'research_guide_link', true );
+								$description = get_post_meta( $post->ID, 'research_guide_description', true );
+								?>
+								<div class="entry-content clearfix">
+									<h3>
+										<?php if ( $link ) { ?>
+										<a href="<?php echo $link ?>" title="<?php echo $title ?>">
+											<?php echo $title ?>
+										</a>
+										<?php } else { echo $title; } ?>
+									</h3>
+									<p><?php echo $description ?></p>
+								</div>
+							</article>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -72,7 +93,14 @@ get_header(); ?>
 				<div class="row">
 					<div class="equal-heights equal-heights-flex-box">
 						<?php tna_posts_via_rss( 'http://blog.nationalarchives.gov.uk/blog/tag/black-british-history-portal/feed/', 'Blog', 3, 'blog' ) ?>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-12 col-md-12 text-right bg-transparent">
+							<ul class="more">
+								<li>
+									<a href="http://blog.nationalarchives.gov.uk/blog/tag/black-british-history-portal/" title="More blog posts">More blog posts</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-md-4">
 							<div id="event" class="card event clearfix">
 								<div class="entry-thumbnail">
 									<a href="http://nationalarchives.eventbrite.co.uk/" title="The National Archives events" target="_blank">
@@ -93,6 +121,13 @@ get_header(); ?>
 							</div>
 						</div>
 						<?php tna_posts_via_rss( 'http://media.nationalarchives.gov.uk/index.php/tag/black-british-history/feed/', 'Podcast', 2, 'podcast' ) ?>
+						<div class="col-sm-12 col-md-12 text-right bg-transparent">
+							<ul class="more">
+								<li>
+									<a href="http://media.nationalarchives.gov.uk/index.php/tag/black-british-history/" title="More podcasts">More podcasts</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
