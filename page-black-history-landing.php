@@ -218,33 +218,6 @@ get_header(); ?>
 					</div>
 			</section>
 			<?php } ?>
-			<section id="connect">
-				<div class="connect">
-					<div class="row">
-						<div class="col-sm-6">
-							<h2>Stay up-to-date and sign up to our newsletter</h2>
-						</div>
-						<div class="col-sm-4">
-							<form name="signup" id="signup" class="pad-medium" action="http://r1.wiredemail.net/signup.ashx" method="post" role="form">
-								<input type="hidden" name="addressbookid" value="636353"> <!-- homepage and general sign up -->
-								<input type="hidden" name="userid" value="173459">
-								<input type="hidden" name="ReturnURL" value="http://nationalarchives.gov.uk/news/subscribe-confirmation.htm">
-								<label class="sr-only" for="email">Enter your email address to subscribe to our newsletter</label>
-								<input type="email" id="email" class="email" name="Email" required="required" placeholder="Enter your email address" aria-label="Enter your email address to subscribe to our newsletter" aria-required="true">
-								<input id="newsletterSignUp" type="submit" name="Submit" value="Subscribe" class="button">
-							</form>
-						</div>
-						<div class="col-sm-2">
-							<a href="http://www.facebook.com/TheNationalArchives" target="_blank" title="External website Facebook - link opens in a new window">
-								<span class="sprite icon-facebook"></span>
-							</a>
-							<a href="https://twitter.com/UkNatArchives" target="_blank" title="External website Twitter - link opens in a new window">
-								<span class="sprite icon-twitter"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
 		</div>
 	</main>
 	<?php endwhile; ?>
