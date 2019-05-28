@@ -69,7 +69,7 @@ function tna_posts_via_rss( $rss_url, $content_source_name, $number_of_posts, $i
                 if ( isset( $item->enclosure['url'] ) ) {
                     $enclosure  = $item->enclosure['url'];
                 } else {
-                    $enclosure = 'http://placehold.it/360x180?text=' . $content_source_name;
+                    $enclosure = 'https://placehold.it/360x180?text=' . $content_source_name;
                 }
                 $namespaces = $item->getNameSpaces( true );
                 $dc         = $item->children( $namespaces['dc'] );
