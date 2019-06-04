@@ -92,7 +92,7 @@ get_header(); ?>
 			<section id="dynamic-content">
 				<div class="row">
 					<div class="equal-heights equal-heights-flex-box">
-						<?php tna_posts_via_rss( 'https://blog.nationalarchives.gov.uk/blog/tag/black-british-history-portal/feed/', 'Blog', 3, 'blog' ) ?>
+						<?php tna_posts_via_rss( 'https://blog.nationalarchives.gov.uk/tag/black-british-history-portal/feed/', 'Blog', 3, 'blog' ) ?>
 						<div class="col-sm-12 col-md-12 text-right bg-transparent">
 							<ul class="more">
 								<li>
